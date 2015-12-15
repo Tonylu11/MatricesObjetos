@@ -22,6 +22,11 @@ public class Matriz {
 	}
 
 	Matriz(int filas, int columnas, int min, int max) {
+		if (min > max) {
+			System.out.println("El minimo no debe exceder al maximo.");
+			min = 0;
+			max = 1;
+		}
 		setFilas(filas);
 		setColumnas(columnas);
 		setMatriz(new int[getFilas()][getColumnas()]);

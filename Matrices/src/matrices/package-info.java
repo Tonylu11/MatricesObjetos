@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author d14lubra
+ * @author Antonio Luque Bravo
  *
  */
 package matrices;
