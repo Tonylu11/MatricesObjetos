@@ -57,8 +57,11 @@ public class TestMatriz {
 	}
 
 	private static void restarMatrices() {
-		if (comprobarSiNull(matriz1) && comprobarSiNull(matriz2))
-			matriz1.restar(matriz2);
+		Matriz resta;
+		if (comprobarSiNull(matriz1) && comprobarSiNull(matriz2)) {
+			resta = matriz1.restar(matriz2);
+			System.out.println("MATRIZ RESTA:\n" + resta);
+		}
 	}
 
 	private static void sumarMatrices() {
